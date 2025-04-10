@@ -129,9 +129,7 @@ Distributed under the MIT License. See `LICENSE` for more details.
 
 **Your Name** – Sagar Prajapati  
 Project Link: [https://github.com/your-username/flight-booking-chatbot](https://github.com/your-username/flight-booking-chatbot)
-```
 
----
 
 ### ✅ Key Improvements:
 - More structured and scannable layout
