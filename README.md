@@ -27,6 +27,7 @@ A conversational AI assistant that helps users find and book flights through nat
   python chat.py
   ```
 3.Project Structure 📂
+```
   ├── app.py                 # Flask web application
 ├── chat.py                # Command-line interface
 ├── city_manager.py        # Handles city name recognition
