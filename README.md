@@ -1,4 +1,3 @@
-```markdown
 # ✈️ AI Powered Flight Booking Chatbot Assistant 🤖
 
 ![Demo](https://img.shields.io/badge/Demo-Available-green)
