@@ -1,12 +1,13 @@
+from dotenv import load_dotenv
+load_dotenv()
 from tkinter import Y
-from intent_manager import get_intent_response
-from city_manager import fuzzy_match_city, fetch_city_names
-from flight_results import search_flights
+from scripts.intent_manager import get_intent_response
+from scripts.city_manager import fuzzy_match_city, fetch_city_names
+from scripts.flight_results import search_flights
 from datetime import datetime
 from tabulate import tabulate
 import pyodbc
-import email_notifications
-from datetime import datetime
+import scripts.email_notifications as email_notifications
 import os
 import re
 
@@ -25,10 +26,17 @@ def validate_email(email):
         return False
 
 # Establish connection to Microsoft SQL Server
-conn = pyodbc.connect('DRIVER={ODBC Driver 17 for SQL Server};'
-                      'SERVER=SAGARR\\SQLEXPRESS;'
-                      'DATABASE=db_chatbot;'
-                      'Trusted_Connection=yes')
+import os
+
+conn = pyodbc.connect(
+    f"DRIVER={{ODBC Driver 17 for SQL Server}};"
+    f"SERVER={os.getenv('DB_SERVER')};"
+    f"DATABASE={os.getenv('DB_NAME')};"
+    f"UID={os.getenv('DB_USER')};"
+    f"PWD={os.getenv('DB_PASSWORD')};"
+)
+
+
 
 cursor = conn.cursor()
 
