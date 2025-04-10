@@ -71,20 +71,20 @@ Example queries:
 
 ```
 flight-booking-chatbot/
-├── app.py                  # Web interface (Flask)
-├── chat.py                 # CLI tool
+├── results/                  
+│   ├── final_results.csv       
 │
-├── core/                   # Core logic modules
+├── scripts/                   # Core logic modules
 │   ├── city_manager.py         # City recognition + fuzzy matching
 │   ├── flight_manager.py       # Booking/search logic
 │   ├── intent_manager.py       # Intent classification
 │   ├── flight_results.py       # Sample flight data logic
-│   └── email_notifications.py  # Email confirmations
+│   ├── email_notifications.py  # Email confirmations
+    ├── app.py                  # Web interface (Flask)
+    └── chat.py                 # CLI tool
 │
-├── templates/              # HTML templates (Flask UI)
-│   └── index.html
-├── static/                 # JS/CSS assets
 ├── requirements.txt        # Python dependencies
+├── LICENSE
 └── README.md               # You're here!
 ```
 
