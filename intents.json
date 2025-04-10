@@ -1,0 +1,95 @@
+{
+  "intents": [
+    {
+      "tag": "GreetUser",
+      "patterns": [
+        "Hi",
+        "Hello",
+        "Good morning",
+        "Good afternoon",
+        "Good evening",
+        "Hey there",
+        "Hi, I'm looking for help",
+        "Hello, can you assist me?",
+        "Hi, I need to book a flight",
+        "Good day, I’d like to reserve a ticket"
+      ],
+      "responses": [
+        "Hello! Welcome to [Airline Name]. How can I assist you with your flight reservation today?",
+        "Hi there! I'm here to help you book your flight. Where are you planning to go?",
+        "Good [morning/afternoon/evening]! Let’s get you booked for your next adventure. How may I assist you today?",
+        "Hello! Ready to take off? I’m here to help with your reservations and travel plans!",
+        "Hi! Thank you for choosing [Airline Name]. Let me know how I can make your booking experience smooth and easy!"
+      ]
+    },
+    {
+      "tag": "AskDepartingDestination",
+      "patterns": [
+        "I want to book a flight",
+        "Start my flight reservation",
+        "I need to travel",
+        "Help me with my flight booking",
+        "Can you assist me in booking a flight?",
+        "I'm planning a trip",
+        "I want to go somewhere",
+        "I want to fly",
+        "What flights do you have?",
+        "Looking to book a ticket"
+      ],
+      "responses": [
+        "Sure! What is your departing destination (from)?",
+        "Of course! Where are you departing from?",
+        "Great! Can you tell me your departure city?",
+        "Absolutely! What city will you be flying from?"
+      ]
+    },
+    {
+      "tag": "AskArrivalDestination",
+      "patterns": [
+        "My departing destination is Vancouver",
+        "I'm flying from Vancouver",
+        "I'm leaving from Toronto",
+        "I want to fly from Vancouver",
+        "Starting my journey from Vancouver",
+        "Departing from New York",
+        "I'm traveling from San Francisco",
+        "I will be leaving from Los Angeles",
+        "I need to fly from Miami"
+      ],
+      "responses": [
+        "Great! Can you please tell me your destination city?",
+        "Awesome! Where would you like to go?",
+        "Perfect! What city are you heading to?",
+        "Got it! Can you please provide your arrival city?"
+      ]
+    },
+    {
+      "tag": "CollectFlightDetails",
+      "patterns": [],
+      "responses": [
+        "Your flight details: Departure from {departure_city} to {destination_city}. Type of flight: {flight_type}.",
+        "Thank you for the details! You are flying from {departure_city} to {destination_city} with a {flight_type} ticket.",
+        "Flight information confirmed: Departing from {departure_city} to {destination_city}. Type of flight: {flight_type}.",
+        "Your booking is noted: You will depart from {departure_city} to {destination_city}. Flight type: {flight_type}."
+      ]
+    },
+    {
+      "tag": "EndConversation",
+      "patterns": [
+        "Thank you",
+        "That's all for now",
+        "I don't need any more help",
+        "Goodbye",
+        "Thanks for the help",
+        "Bye"
+      ],
+      "responses": [
+        "You're very welcome! Safe travels, and feel free to reach out if you need anything else.",
+        "Thank you for choosing [Airline Name]! Have a wonderful journey!",
+        "It was my pleasure assisting you. Goodbye, and have a great day!",
+        "Safe travels! If you need any further assistance, I’m here to help.",
+        "Thank you, and take care! Hope to see you again soon on [Airline Name]!"
+      ]
+    }
+  ]
+}
